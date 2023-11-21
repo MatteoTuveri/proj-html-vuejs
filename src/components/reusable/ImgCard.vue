@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-    name:'NavList',
+    name:'ImgCard',
     data(){
         return{
 

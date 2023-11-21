@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-    name:'CardList',
+    name:'InfoCard',
     data(){
         return{
 

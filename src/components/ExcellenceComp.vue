@@ -1,6 +1,24 @@
 <template>
-    <div>
-        ExcellenceComp
+    <div class="container">
+        <div>
+            <div>
+                our business area
+            </div>
+            <div>
+
+            </div>
+            <div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+        <div>
+
+        </div>
     </div>
 </template>
 <script>

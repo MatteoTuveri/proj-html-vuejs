@@ -1,11 +1,12 @@
 <template>
-  <header>
-    <!-- navigation -->
-    <HeaderComp />
+  <header><!-- navigation -->
+    <div class="container py-2">
+      <HeaderComp />
+    </div>
   </header>
   <main>
     <div id="hero" class=""> <!-- hero -->
-      <HeroComp />
+      <HeroComp  />
     </div>
     <div id="excellence" class=""> <!-- cards excellence in services -->
       <div class="container">
@@ -78,5 +79,9 @@ export default {
 }
 #get-in{
   background-color: $secondary-bg-font;
+}
+header{
+  background-color: $primary-font ;
+  height: 5vh;
 }
 </style>
