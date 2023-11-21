@@ -8,15 +8,21 @@
     <div id="hero" class=""> <!-- hero -->
       <HeroComp  />
     </div>
-    <div id="excellence" class=""> <!-- cards excellence in services -->
+    <div id="excellence" class="py-5 position-relative"> <!-- cards excellence in services -->
       <div class="container">
         <ExcellenceComp />
       </div>
+      <div class="position-absolute img">
+      </div>
     </div>
-    <div id="company" class=""> <!-- the company -->
-      <div class="container">
+    <div id="company" class="d-flex position-relative"> <!-- the company -->
+      <div class="w-50 d-flex justify-content-end align-items-center">
         <TheCompanyComp />
       </div>
+      <div class="w-50">
+        <img src="/Images/imgs/about-4.jpg" alt="">
+      </div>
+      <div class="position-absolute img"></div>
     </div>
     <div id="actions" class=""> <!-- cards actions and projects -->
       <div class="container">
@@ -63,11 +69,14 @@ export default {
 
 <style lang="scss" scoped>
 @use './assets/style/partials/variables' as*;
+img{
+  width: 100%;
+}
 #excellence{
   background-color: $excellence-bg;
 }
 #company{
-  background-color: blue;
+  background-color: black;
 
 }
 #actions{
@@ -83,5 +92,17 @@ export default {
 header{
   background-color: $primary-font ;
   height: 5vh;
+}
+
+.img{
+  background-image: url('/Images/imgs/bullets.png');
+  background-size: cover;
+  width: 200px;
+  height: 80px;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+  z-index: 100;
 }
 </style>
