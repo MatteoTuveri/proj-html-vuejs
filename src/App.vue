@@ -72,21 +72,21 @@ export default {
 img{
   width: 100%;
 }
-#excellence{
+#services{
   background-color: $excellence-bg;
 }
-#company{
+#about{
   background-color: black;
 
 }
-#actions{
+#projects{
   background-color: $secondary-bg-font;
 
 }
 #results{
   background-image: url('/Images/imgs/bg-7.jpg');
 }
-#get-in{
+#get-in-touch{
   background-color: $secondary-bg-font;
 }
 header{
