@@ -7,7 +7,9 @@
                         <img src="/Images/imgs/logo.PNG" alt="logo">
                     </div>
                     <ul class="d-flex align-items-center mb-0">
-                        <li v-for="(item, index) in store.sectionList">{{ item.name }}</li>
+                        <li v-for="(item, index) in store.sectionList">
+                            <a :href="'#'+item.id">{{ item.name }}</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -37,6 +39,10 @@ ul {
         text-transform: uppercase;
         padding: 10px 15px;
         cursor: pointer;
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
     }
 
     li:last-child {

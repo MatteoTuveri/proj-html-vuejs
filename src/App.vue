@@ -1,11 +1,12 @@
 <template>
   <header><!-- navigation -->
-      <HeaderComp />
+    <HeaderComp />
   </header>
   <main>
-    <div v-for="(item,index) in store.sectionList" :id="item.id">
+    <div v-for="(item, index) in store.sectionList" :id="item.id">
       <HomeComp v-if="item.name === 'home'" />
-      <ServicesComp v-if="item.name === 'services'" />
+      <ServicesComp v-if="item.name === 'services'" :title="item.details.title" :special="item.details.specialTitle"
+        :paragraph="item.details.paragraph" :description="item.details.description" />
       <AboutComp v-if="item.name === 'about'" />
       <ProjectsComp v-if="item.name === 'projects'" />
       <ResultsComp v-if="item.name === 'results'" />
@@ -70,4 +71,5 @@ img {
 header {
   background-color: $primary-font ;
   height: 5vh;
-}</style>
+}
+</style>

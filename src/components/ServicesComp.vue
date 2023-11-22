@@ -3,16 +3,14 @@
         <div class="container">
             <div>
                 <div>
-                    our business area
+                    {{ description }}
                 </div>
                 <div>
-                    excellence in <span>service</span>
+                    {{ title }}<span>{{ special }}</span>
                 </div>
                 <div class="row">
                     <div class="col-10">
-                        We are leaders in providing consultancy services with a set of cutting-edge technologies and a team
-                        of
-                        experienced and renowned professionals. These are some options that you can hire.
+                       {{ paragraph }}
                     </div>
                     <div class="col-2 d-flex justify-content-end align-items-center">
                         <div class="btn btn-primary">
@@ -42,7 +40,14 @@ export default {
             store
         };
     },
-    components: { InfoCard }
+    components: { InfoCard },
+    props:{
+        title: String,
+        special:String,
+        paragraph: String,
+        description: String
+
+    }
 }
 </script>
 <style lang="scss" scoped>

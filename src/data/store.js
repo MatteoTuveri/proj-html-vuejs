@@ -31,8 +31,8 @@ export const store = reactive({
             details:{
                 title:'Ready',
                 specialTitle:'Team',
-                pragraph:'No metter what your company needs, we will be ready to assist you in the best possible way.',
-                decription:''
+                paragraph:'No metter what your company needs, we will be ready to assist you in the best possible way.',
+                description:''
             }
         },
         {
@@ -41,8 +41,8 @@ export const store = reactive({
             details:{
                 title:'Excellence in',
                 specialTitle:'Services',
-                pragraph:'We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of experienced and renowned professionals. These are some options thet you can hire.',
-                decription:'our business areas'
+                paragraph:'We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of experienced and renowned professionals. These are some options thet you can hire.',
+                description:'our business areas'
             }
         },
         {
@@ -51,8 +51,8 @@ export const store = reactive({
             details:{
                 title:'The',
                 specialTitle:'Company',
-                pragraph:'For 12 years we have been providing audit and warranty, financial advice, risk advice, taxes and related services to select clients',
-                decription:'about the network'
+                paragraph:'For 12 years we have been providing audit and warranty, financial advice, risk advice, taxes and related services to select clients',
+                description:'about the network'
             }
         },
         {
@@ -61,8 +61,8 @@ export const store = reactive({
             details:{
                 title:'Actions &',
                 specialTitle:'Projects',
-                pragraph:'',
-                decription:'we do more for anyone'
+                paragraph:'',
+                description:'we do more for anyone'
             }
         },
         {
@@ -71,8 +71,8 @@ export const store = reactive({
             details:{
                 title:'Results in',
                 specialTitle:'Number',
-                pragraph:'',
-                decription:'what are we doing'
+                paragraph:'',
+                description:'what are we doing'
             }
         },
         {
@@ -81,8 +81,8 @@ export const store = reactive({
             details:{
                 title:'Get in',
                 specialTitle:'Touch',
-                pragraph:'We will respond to your message as soon as possible.',
-                decription:'send a message'
+                paragraph:'We will respond to your message as soon as possible.',
+                description:'send a message'
             }
         }
     ],
