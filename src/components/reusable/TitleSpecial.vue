@@ -5,12 +5,12 @@
     <div class="display-2 mb-3" :class="(item.green) ? '' : 'white'">
         {{ item.title }} <span class="position-relative" :class="(item.green) ? 'green' : 'white'" id="special">{{ item.specialTitle }}</span>
     </div>
-    <div class="row mb-5">
-        <div :class="(item.button) ? 'col-10' : 'col-12'" id="paragraph">
+    <div class="d-flex mb-5 justify-content-center" :class="(item.row)?'':'flex-column'" >
+        <div :class="(item.button)&&(item.row) ? 'col-9' : 'col-12'" id="paragraph" class="mb-4">
             {{ item.paragraph }}
         </div>
-        <div v-if="item.button" class="col-2 d-flex align-items-center">
-            <div class=" text-uppercase button ">
+        <div v-if="item.button" class="d-flex align-items-center" :class="(item.centerButton)?'justify-content-center col-12':'col-3'">
+            <div class=" text-uppercase text-center button ">
                 {{ item.button }}
             </div>
         </div>
@@ -25,7 +25,7 @@ export default {
         }
     },
     props: {
-        item: Object
+        item: Object,
     }
 }
 </script>
@@ -64,5 +64,6 @@ span::after {
     border-radius: 5px;
     color: white;
     padding: 10px 20px;
+    cursor: pointer;
 }
 </style>

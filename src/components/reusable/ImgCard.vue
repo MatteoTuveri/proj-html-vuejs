@@ -4,8 +4,8 @@
         <div class="card-body h-100 position-absolute d-flex flex-column justify-content-between">
             <div>
                 <div class="d-flex justify-content-center text-white hide-text-tp">
-                    <div class="p-3">Coding</div>
-                    <div class="p-3">3 years</div>
+                    <div class="p-3"><i class="fa-regular fa-user mx-2"></i>Coding</div>
+                    <div class="p-3"><i class="fa-regular fa-clock mx-2"></i>3 years</div>
                 </div>
             </div>
             <div>

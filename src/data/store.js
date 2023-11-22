@@ -19,82 +19,117 @@ export const store = reactive({
             icon: 'fa-solid fa-location-dot'
         },
         social: [
-            'fa-brands fa-facebook-f','fa-brands fa-twitter','fa-brands fa-linkedin-in'
+            'fa-brands fa-facebook-f', 'fa-brands fa-twitter', 'fa-brands fa-linkedin-in'
         ]
     },
     imgUrl: '/Images/imgs/',
     svgUrl: '/Images/svgs/',
     sectionList: {
-        home:{
+        home: {
             id: 'home',
             name: 'home',
-            details:{
-                title:'Ready',
-                specialTitle:'Team',
-                paragraph:'No metter what your company needs, we will be ready to assist you in the best possible way.',
-                description:'',
-                green: true,
-                button:null
+            details: {
+                one: {
+                    title: 'We Share',
+                    specialTitle: 'Good Ideas',
+                    paragraph: 'Escape the comfort zone and achieve better results with the help of experts who understand the subject',
+                    description: '',
+                    green: true,
+                    button: 'get in touch',
+                    row: false,
+                    centerButton:false
+                },
+                two: {
+                    title: 'Ready',
+                    specialTitle: 'Team',
+                    paragraph: 'No metter what your company needs, we will be ready to assist you in the best possible way.',
+                    description: '',
+                    green: true,
+                    button: 'get in touch',
+                    row: false,
+                    centerButton:true
+                },
+                three: {
+                    title: 'Talk to a',
+                    specialTitle: 'Consultant',
+                    paragraph: 'Do not miss the opportunity to achieve better results and solidity in the market.',
+                    description: '',
+                    green: true,
+                    button: 'get in touch',
+                    row: false,
+                    centerButton:false
+                }
+
             }
         },
-        services:{
+        services: {
             id: 'services',
             name: 'services',
-            details:{
-                title:'Excellence in',
-                specialTitle:'Services',
-                paragraph:'We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of experienced and renowned professionals. These are some options thet you can hire.',
-                description:'our business areas',
+            details: {
+                title: 'Excellence in',
+                specialTitle: 'Services',
+                paragraph: 'We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of experienced and renowned professionals. These are some options thet you can hire.',
+                description: 'our business areas',
                 green: true,
-                button:'see all'
+                button: 'see all',
+                row: true,
+                centerButton:false
             }
         },
-        about:{
+        about: {
             id: 'about',
             name: 'about',
-            details:{
-                title:'The',
-                specialTitle:'Company',
-                paragraph:'For 12 years we have been providing audit and warranty, financial advice, risk advice, taxes and related services to select clients',
-                description:'about the network',
+            details: {
+                title: 'The',
+                specialTitle: 'Company',
+                paragraph: 'For 12 years we have been providing audit and warranty, financial advice, risk advice, taxes and related services to select clients',
+                description: 'about the network',
                 green: false,
-                button:null
+                button: null,
+                row: false,
+                centerButton:false
             }
         },
-        projects:{
+        projects: {
             id: 'projects',
             name: 'projects',
-            details:{
-                title:'Actions &',
-                specialTitle:'Projects',
-                paragraph:'',
-                description:'we do more for anyone',
+            details: {
+                title: 'Actions &',
+                specialTitle: 'Projects',
+                paragraph: '',
+                description: 'we do more for anyone',
                 green: true,
-                button:null
+                button: null,
+                row: false,
+                centerButton:false
             }
         },
-        results:{
+        results: {
             id: 'results',
             name: 'results',
-            details:{
-                title:'Results in',
-                specialTitle:'Number',
-                paragraph:'',
-                description:'what are we doing',
+            details: {
+                title: 'Results in',
+                specialTitle: 'Number',
+                paragraph: '',
+                description: 'what are we doing',
                 green: true,
-                button:null
+                button: null,
+                row: false,
+                centerButton:false
             }
         },
-        getInTouch:{
+        getInTouch: {
             id: 'get-in-touch',
             name: 'get in touch',
-            details:{
-                title:'Get in',
-                specialTitle:'Touch',
-                paragraph:'We will respond to your message as soon as possible.',
-                description:'send a message',
+            details: {
+                title: 'Get in',
+                specialTitle: 'Touch',
+                paragraph: 'We will respond to your message as soon as possible.',
+                description: 'send a message',
                 green: true,
-                button:null
+                button: null,
+                row: false,
+                centerButton:false
             }
         }
     },
