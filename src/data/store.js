@@ -24,68 +24,80 @@ export const store = reactive({
     },
     imgUrl: '/Images/imgs/',
     svgUrl: '/Images/svgs/',
-    sectionList: [
-        {
+    sectionList: {
+        home:{
             id: 'home',
             name: 'home',
             details:{
                 title:'Ready',
                 specialTitle:'Team',
                 paragraph:'No metter what your company needs, we will be ready to assist you in the best possible way.',
-                description:''
+                description:'',
+                green: true,
+                button:null
             }
         },
-        {
+        services:{
             id: 'services',
             name: 'services',
             details:{
                 title:'Excellence in',
                 specialTitle:'Services',
                 paragraph:'We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of experienced and renowned professionals. These are some options thet you can hire.',
-                description:'our business areas'
+                description:'our business areas',
+                green: true,
+                button:'see all'
             }
         },
-        {
+        about:{
             id: 'about',
             name: 'about',
             details:{
                 title:'The',
                 specialTitle:'Company',
                 paragraph:'For 12 years we have been providing audit and warranty, financial advice, risk advice, taxes and related services to select clients',
-                description:'about the network'
+                description:'about the network',
+                green: false,
+                button:null
             }
         },
-        {
+        projects:{
             id: 'projects',
             name: 'projects',
             details:{
                 title:'Actions &',
                 specialTitle:'Projects',
                 paragraph:'',
-                description:'we do more for anyone'
+                description:'we do more for anyone',
+                green: true,
+                button:null
             }
         },
-        {
+        results:{
             id: 'results',
             name: 'results',
             details:{
                 title:'Results in',
                 specialTitle:'Number',
                 paragraph:'',
-                description:'what are we doing'
+                description:'what are we doing',
+                green: true,
+                button:null
             }
         },
-        {
+        getInTouch:{
             id: 'get-in-touch',
             name: 'get in touch',
             details:{
                 title:'Get in',
                 specialTitle:'Touch',
                 paragraph:'We will respond to your message as soon as possible.',
-                description:'send a message'
+                description:'send a message',
+                green: true,
+                button:null
             }
         }
-    ],
+    },
     infoCards: [
         {
             title: "Audit & Assurance",
@@ -145,32 +157,32 @@ export const store = reactive({
         {
             title: "Academic professional program in social media",
             img: 'project-1.jpg',
-            paragraph: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos veniam dolorum quam aut enim consectetur assumenda laborum facilis repellendus nobis."
+            paragraph: "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
         },
         {
             title: "President's speech at the annual meeting",
             img: 'project-2.jpg',
-            paragraph: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos veniam dolorum quam aut enim consectetur assumenda laborum facilis repellendus nobis."
+            paragraph: "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
         },
         {
             title: "International business trip in Shanghai",
             img: 'project-3.jpg',
-            paragraph: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos veniam dolorum quam aut enim consectetur assumenda laborum facilis repellendus nobis."
+            paragraph: "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
         },
         {
             title: "Technology workshop with education theme",
             img: 'project-4.jpg',
-            paragraph: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos veniam dolorum quam aut enim consectetur assumenda laborum facilis repellendus nobis."
+            paragraph: "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
         },
         {
             title: "Donation of clothes and food to the partner NGO",
             img: 'project-5.jpg',
-            paragraph: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos veniam dolorum quam aut enim consectetur assumenda laborum facilis repellendus nobis."
+            paragraph: "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
         },
         {
             title: "Confraternization of the procurement team",
             img: 'project-6.jpg',
-            paragraph: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos veniam dolorum quam aut enim consectetur assumenda laborum facilis repellendus nobis."
+            paragraph: "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
         },
     ],
     results: [

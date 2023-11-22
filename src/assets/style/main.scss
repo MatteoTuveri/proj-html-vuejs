@@ -1,7 +1,12 @@
 @use './partials/variables' as *;
 $fa-font-path: '../webfonts';
+@import url('https://fonts.cdnfonts.com/css/swiss-721');
 @import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
 @import '@fortawesome/fontawesome-free/scss/solid.scss';
 @import '@fortawesome/fontawesome-free/scss/regular.scss';
 @import '@fortawesome/fontawesome-free/scss/brands.scss';
 @import 'bootstrap/scss/bootstrap';
+
+*{
+    font-family: 'Swiss 721', sans-serif;
+}

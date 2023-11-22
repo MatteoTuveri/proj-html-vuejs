@@ -1,8 +1,11 @@
 <template>
-    <div class="d-flex position-relative">
-        <div class="w-50 d-flex justify-content-end align-items-center">
+    <div class="container d-flex justify-content-end align-items-center position-relative">
+        <div class="w-50 d-flex flex-column justify-content-end align-items-center py-5">
             <div>
-                TheCompanyComp
+                <TitleSpecial :item="item"/>
+            </div>
+            <div class="row row-cols-2 mb-5 px-3">
+                <Certifications v-for="item in store.companyCert" :title="item.title" :icon="item.icon" :text="item.paragraph" class="col p-2" />
             </div>
         </div>
         <div class="w-50">
@@ -12,13 +15,21 @@
     </div>
 </template>
 <script>
+import TitleSpecial from './reusable/TitleSpecial.vue';
+import { store } from '../data/store';
+import Certifications from './reusable/Certifications.vue';
 export default {
-    name: 'AboutComp',
+    name: "AboutComp",
     data() {
         return {
-
-        }
-    }
+            store,
+            item: store.sectionList.about.details
+        };
+    },
+    props: {
+        id: Number
+    },
+    components: { TitleSpecial, Certifications }
 }
 </script>
 <style lang="scss" scoped>

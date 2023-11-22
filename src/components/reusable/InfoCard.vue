@@ -47,5 +47,8 @@ export default {
 img{
     width: 100%;
 }
+.card-text{
+    color: $options-color;
+}
 
 </style>

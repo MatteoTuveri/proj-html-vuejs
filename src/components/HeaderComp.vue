@@ -29,7 +29,7 @@ export default {
         return {
             store
         }
-    }
+    },
 }
 </script>
 <style lang="scss" scoped>

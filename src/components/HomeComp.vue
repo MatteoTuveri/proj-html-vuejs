@@ -27,6 +27,9 @@ export default {
             store
         }
     },
+    props:{
+        id: Number
+    }
 }
 </script>
 <style lang="scss" scoped>
@@ -63,22 +66,22 @@ ul {
 }
 
 .hero {
-    height: 95vh;
+    height: calc(100vh - 40px);
     background-image: url('/Images/imgs/bg-parallax.png');
     background-size: cover;
 }
 
 .position-1 {
     background-position: 0% 0%;
-    transition: 5s;
+    transition: 0.5s;
 }
 
 .position-2 {
     background-position: 50% 0%;
-    transition: 5s;
+    transition: 0.5s;
 }
 
 .position-3 {
     background-position: 100% 0%;
-    transition: 5s;
+    transition: 0.5s;
 }</style>
