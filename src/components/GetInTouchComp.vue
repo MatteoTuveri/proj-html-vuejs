@@ -1,11 +1,11 @@
 <template>
-    <div>
+    <div class="container">
         GetInComp
     </div>
 </template>
 <script>
 export default {
-    name:'GetInComp',
+    name:'GetInTouchComp',
     data(){
         return{
 

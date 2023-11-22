@@ -1,11 +1,11 @@
 <template>
-    <div>
-        TheCompanyComp
+    <div class="container">
+        ActionsComp
     </div>
 </template>
 <script>
 export default {
-    name:'TheCompanyComp',
+    name:'ProjectsComp',
     data(){
         return{
 

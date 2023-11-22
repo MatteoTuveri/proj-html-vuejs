@@ -1,108 +1,73 @@
 <template>
   <header><!-- navigation -->
-    <div class="container py-2">
       <HeaderComp />
-    </div>
   </header>
   <main>
-    <div id="hero" class=""> <!-- hero -->
-      <HeroComp  />
-    </div>
-    <div id="excellence" class="py-5 position-relative"> <!-- cards excellence in services -->
-      <div class="container">
-        <ExcellenceComp />
-      </div>
-      <div class="position-absolute img">
-      </div>
-    </div>
-    <div id="company" class="d-flex position-relative"> <!-- the company -->
-      <div class="w-50 d-flex justify-content-end align-items-center">
-        <TheCompanyComp />
-      </div>
-      <div class="w-50">
-        <img src="/Images/imgs/about-4.jpg" alt="">
-      </div>
-      <div class="position-absolute img"></div>
-    </div>
-    <div id="actions" class=""> <!-- cards actions and projects -->
-      <div class="container">
-        <ActionsComp />
-      </div>
-    </div>
-    <div id="results" class=""> <!-- results in numbers -->
-      <div class="container">
-        <ResultsComp />
-      </div>
-    </div>
-    <div id="get-in" class=""> <!-- get-in touch -->
-      <div class="container">
-        <GetInComp />
-      </div>
+    <div v-for="(item,index) in store.sectionList" :id="item.id">
+      <HomeComp v-if="item.name === 'home'" />
+      <ServicesComp v-if="item.name === 'services'" />
+      <AboutComp v-if="item.name === 'about'" />
+      <ProjectsComp v-if="item.name === 'projects'" />
+      <ResultsComp v-if="item.name === 'results'" />
+      <GetInTouchComp v-if="item.name === 'get in touch'" />
     </div>
   </main>
-  <footer>
-    <!-- info -->
+  <footer><!-- info -->
     <FooterComp />
   </footer>
 </template>
 
 <script>
-import ActionsComp from './components/ActionsComp.vue';
-import ExcellenceComp from './components/ExcellenceComp.vue';
+import ProjectsComp from './components/ProjectsComp.vue';
+import ServicesComp from './components/ServicesComp.vue';
 import FooterComp from './components/FooterComp.vue';
-import GetInComp from './components/GetInComp.vue';
+import GetInTouchComp from './components/GetInTouchComp.vue';
 import HeaderComp from './components/HeaderComp.vue';
-import HeroComp from './components/HeroComp.vue';
+import HomeComp from './components/HomeComp.vue';
 import ResultsComp from './components/ResultsComp.vue';
-import TheCompanyComp from './components/TheCompanyComp.vue';
+import AboutComp from './components/AboutComp.vue';
 import { store } from './data/store';
 export default {
-    name: "App",
-    data() {
-        return {
-            store
-        };
-    },
-    components: { HeaderComp, HeroComp, ExcellenceComp, TheCompanyComp, ActionsComp, ResultsComp, GetInComp, FooterComp }
+  name: "App",
+  data() {
+    return {
+      store
+    };
+  },
+  components: { HeaderComp, HomeComp, ServicesComp, AboutComp, ProjectsComp, ResultsComp, GetInTouchComp, FooterComp }
 }
 </script>
 
 <style lang="scss" scoped>
 @use './assets/style/partials/variables' as*;
-img{
+
+img {
   width: 100%;
 }
-#services{
+
+#services {
   background-color: $excellence-bg;
 }
-#about{
+
+#about {
   background-color: black;
 
 }
-#projects{
+
+#projects {
   background-color: $secondary-bg-font;
 
 }
-#results{
+
+#results {
   background-image: url('/Images/imgs/bg-7.jpg');
 }
-#get-in-touch{
+
+#get-in-touch {
   background-color: $secondary-bg-font;
 }
-header{
+
+header {
   background-color: $primary-font ;
   height: 5vh;
-}
-
-.img{
-  background-image: url('/Images/imgs/bullets.png');
-  background-size: cover;
-  width: 200px;
-  height: 80px;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0.5;
-  z-index: 100;
-}
-</style>
+}</style>
