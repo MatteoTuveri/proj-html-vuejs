@@ -15,8 +15,12 @@ export const store = reactive({
             text: 'hello@exemple.com',
             icon: 'fa-solid fa-envelope'
         },
-        position: {
+        position1: {
             text: 'Main Evenue, 987',
+            icon: 'fa-solid fa-location-dot'
+        },
+        position2: {
+            text: 'Main Evenue, 123',
             icon: 'fa-solid fa-location-dot'
         },
         social: [
@@ -224,19 +228,27 @@ export const store = reactive({
     results: [
         {
             name: 'Certifications',
-            value: 128
+            value: 128,
+            i:0,
+            checkActive:true
         },
         {
             name: 'Employees',
-            value: 230
+            value: 230,
+            i:0,
+            checkActive:true
         },
         {
             name: 'Costumers',
-            value: 517
+            value: 517,
+            i:0,
+            checkActive:true
         },
         {
             name: 'Countries Served',
-            value: 94
+            value: 94,
+            i:0,
+            checkActive:true
         },
     ],
     partnersList: ['logo-1.png', 'logo-2.png', 'logo-3.png', 'logo-4.png', 'logo-5.png'],

@@ -1,16 +1,16 @@
 <template>
-    <div class="w-100" @pointerenter="active">
-        <div class="container text-center pt-5">
-            <TitleSpecial :item="item" />
-        </div>
-        <div class="container d-flex justify-content-around pb-5">
-            <div v-for="item in store.results">
-                <AnimatedNumber :name="item.name" :value="item.value" />
+    <div class="position-relative">
+        <div class="w-100">
+            <div class="container text-center pt-5">
+                <TitleSpecial :item="item" />
+            </div>
+            <div>
+                <AnimatedNumber :item="results" />
             </div>
         </div>
-    </div>
-    <div class="py-5 bg-black">
-        <PartnersComp class="my-5"/>
+        <div class="py-5 bg-black">
+            <PartnersComp class="my-5" />
+        </div>
     </div>
 </template>
 <script>
@@ -25,6 +25,7 @@ export default {
         return {
             store,
             item: store.sectionList.results.details,
+            results: store.results
         };
     },
     components: { AnimatedNumber, TitleSpecial, PartnersComp }

@@ -1,10 +1,16 @@
 <template>
-    <div class="d-flex flex-column align-items-center p-4" @pointerenter="incNumber(i,value)">
-        <div class="number display-1">
-            {{ currentNumber }}
-        </div>
-        <div class="text-center text-white">
-            {{ name }}
+    <div class="position-absolute trigger" @pointerenter="activeRoll">
+    </div>
+    <div class="container d-flex justify-content-around pb-5" >
+        <div v-for="element in item">
+            <div class="d-flex flex-column align-items-center p-4">
+                <div class="number display-1">
+                    {{ element.i }}
+                </div>
+                <div class="text-center text-white">
+                    {{ element.name }}
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -15,26 +21,28 @@ export default {
     data() {
         return {
             store,
-            currentNumber: 0,
-            i: 0,
         }
     },
     props: {
-        name: String,
-        value: Number
+        item: Array
     },
     methods: {
-        incNumber(i, max) {
-            console.log(window.innerHeight)
-            if (i <= max) {
-                this.currentNumber = this.i;
+        activeRoll() {
+            for (let n = 0; n < this.item.length; n++) {
+                const element = this.item[n];
+                this.incNumber(element)
+            }
+        },
+        incNumber(element) {
+            if (element.i < element.value) {
                 setTimeout(() => {
-                    this.i += 1;
-                    this.incNumber(this.i, max);
+                    element.i += 1;
+                    this.incNumber(element)
+                    console.log(element)
                 }, 10);
             }
         }
-    },
+    }
 }
 </script>
 <style lang="scss" scoped>
@@ -42,5 +50,12 @@ export default {
 
 .number {
     color: $special-bg-font;
+}
+
+.trigger{
+    bottom: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
 }
 </style>
