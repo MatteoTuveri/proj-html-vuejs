@@ -136,7 +136,7 @@ export const store = reactive({
                 row: false,
                 centerButton:false
             }
-        }
+        },
     },
     infoCards: [
         {

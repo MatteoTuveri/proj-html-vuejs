@@ -1,7 +1,7 @@
 <template>
     <div>
-        <div v-if="img">
-            <img :src="img" alt="title">
+        <div v-if="img" class="img mb-3">
+            <img class="w-100" :src="img" alt="title">
         </div>
         <div v-if="title">
             <h2>{{ title }}</h2>
@@ -13,17 +13,17 @@
     <div>
         <div v-for="element in item">
             <div class="d-flex align-items-center f-size-2">
-                <div :class="(special) ? 'special-icon' : ''" class="icon my-3 me-3 d-flex align-items-center justify-content-center">
+                <div :class="(special) ? 'special-icon' : 'base'" class="icon my-3 me-3 d-flex align-items-center justify-content-center">
                     <i :class="element.icon"></i>
                 </div>
-                <div :class="(special) ? 'special-text' : ''">
+                <div :class="(special) ? 'special-text' : 'base'">
                     {{ element.text }}
                 </div>
             </div>
         </div>
     </div>
-    <div>
-        <div class="button text-uppercase my-3" :class="(special) ? 'special-btn' : ''">
+    <div class="d-flex">
+        <div class="button text-uppercase my-3" :class="(special) ? 'special-btn' : 'base-btn'">
             {{ button }}
         </div>
     </div>
@@ -63,5 +63,37 @@ export default {
 }
 .special-text{
     color: $special-bg-font;
+}
+.button{
+    padding: 10px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.base{
+    color: $options-color;
+}
+.base-btn{
+    border: solid 2px $special-bg-font ;
+    color: white;
+    transition: 1s;
+}
+.base-btn:hover{
+    border: solid 2px white ;
+    color: white;
+    transition: 1s;
+}
+.special-btn{
+    background-color: rgb(185, 242, 242);
+    color: $special-bg-font ;
+    transition: 1s;
+}
+.special-btn:hover{
+    background-color: rgb(0, 166, 166);
+    color: white ;
+    transition: 1s;
+}
+
+.img{
+    width: 150px;
 }
 </style>

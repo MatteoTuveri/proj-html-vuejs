@@ -7,7 +7,7 @@
                         <img src="/Images/imgs/logo.PNG" alt="logo">
                     </div>
                     <ul class="d-flex align-items-center mb-0">
-                        <li v-for="(item, index) in store.sectionList">
+                        <li v-for="(item, index) in store.sectionList" class="mx-1">
                             <a :href="'#' + item.id">{{ item.name }}</a>
                         </li>
                     </ul>
@@ -77,12 +77,16 @@ ul {
             color: inherit;
         }
     }
-
     li:last-child {
         background-color: $special-bg-font;
         border-radius: 5px;
         color: white;
     }
+
+    li:last-child:hover{
+    background-color: rgb(0, 166, 166);
+    transition: 1s;
+}
 }
 
 .img {

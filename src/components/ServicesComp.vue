@@ -70,4 +70,5 @@ export default {
     border-radius: 5px;
     color: white;
     padding: 5px 20px;
-}</style>
+}
+</style>

@@ -82,4 +82,9 @@ img {
 header {
   background-color: $primary-font ;
   height: 40px;
-}</style>
+}
+
+footer{
+  background-color: black;
+}
+</style>

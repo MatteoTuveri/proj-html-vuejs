@@ -1,6 +1,8 @@
 <template>
     <div class="container text-center py-5">
-        <TitleSpecial :item="item" />
+        <div class="pt-5">
+           <TitleSpecial :item="item" /> 
+        </div>
         <div>
             <ul class="d-flex align-items-center justify-content-center mb-4">
                 <li v-for="(item, index) in store.navList">

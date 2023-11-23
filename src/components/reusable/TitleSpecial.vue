@@ -65,5 +65,10 @@ span::after {
     color: white;
     padding: 10px 20px;
     cursor: pointer;
+    transition: 1s;
+}
+.button:hover{
+    background-color: rgb(0, 166, 166);
+    transition: 1s;
 }
 </style>
