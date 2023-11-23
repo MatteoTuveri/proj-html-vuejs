@@ -10,3 +10,19 @@ $fa-font-path: '../webfonts';
 *{
     font-family: 'Swiss 721', sans-serif;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: gray;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $special-bg-font;
+    border-radius: 20px;
+  }
