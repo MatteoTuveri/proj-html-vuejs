@@ -71,6 +71,8 @@ img {
 
 #results {
   background-image: url('/Images/imgs/bg-7.jpg');
+  background-size: cover;
+  background-position: center
 }
 
 #get-in-touch {

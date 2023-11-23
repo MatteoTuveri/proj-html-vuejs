@@ -1,6 +1,7 @@
 import { reactive } from "vue";
 
 export const store = reactive({
+    trigger:false,
     companyInfo: {
         openHours: {
             text: 'Mon-Sat-9:00-18:00',
@@ -110,9 +111,9 @@ export const store = reactive({
             details: {
                 title: 'Results in',
                 specialTitle: 'Number',
-                paragraph: '',
+                paragraph: 'Our goal is to exceed expectations by delivering the best job possible.',
                 description: 'what are we doing',
-                green: true,
+                green: false,
                 button: null,
                 row: false,
                 centerButton:false
@@ -252,7 +253,7 @@ export const store = reactive({
             title: 'Support',
             items: ['Responsability', 'Terms of Use', 'About Cookies', 'Privacy Policy', 'Accessibility', 'Information']
         }
-    ]
+    ],
 
 
 });

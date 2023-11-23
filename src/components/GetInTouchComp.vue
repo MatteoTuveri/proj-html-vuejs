@@ -1,6 +1,5 @@
 <template>
-    <div class="container">
-        GetInComp
+    <div class="container d-flex">
     </div>
 </template>
 <script>
