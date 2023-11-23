@@ -1,6 +1,6 @@
 <template>
     <div class="container d-flex justify-content-end align-items-center position-relative">
-        <div class="w-50 d-flex flex-column justify-content-end align-items-center py-5">
+        <div class="col-12 col-md-6 d-flex flex-column justify-content-end align-items-center py-5">
             <div>
                 <TitleSpecial :item="item"/>
             </div>
@@ -8,7 +8,7 @@
                 <Certifications v-for="item in store.companyCert" :title="item.title" :icon="item.icon" :text="item.paragraph" class="col p-2" />
             </div>
         </div>
-        <div class="w-50">
+        <div class="col-6 d-none d-md-block">
             <img src="/Images/imgs/about-4.jpg" alt="">
         </div>
         <div class="position-absolute img"></div>

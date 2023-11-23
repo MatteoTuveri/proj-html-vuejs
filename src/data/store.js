@@ -141,54 +141,54 @@ export const store = reactive({
     infoCards: [
         {
             title: "Audit & Assurance",
-            paragraph: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos veniam dolorum quam aut enim consectetur assumenda laborum facilis repellendus nobis.",
+            paragraph: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
             icon: 'svg-1.svg'
         },
         {
             title: "Financial Advisor",
-            paragraph: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos veniam dolorum quam aut enim consectetur assumenda laborum facilis repellendus nobis.",
+            paragraph: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
             icon: 'svg-2.svg'
         },
         {
             title: "Analytics and M&A",
-            paragraph: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos veniam dolorum quam aut enim consectetur assumenda laborum facilis repellendus nobis.",
+            paragraph: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
             icon: 'svg-3.svg'
         },
         {
             title: "Middle Marketing",
-            paragraph: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos veniam dolorum quam aut enim consectetur assumenda laborum facilis repellendus nobis.",
+            paragraph: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
             icon: 'svg-4.svg'
         },
         {
             title: "Legal Consulting",
-            paragraph: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos veniam dolorum quam aut enim consectetur assumenda laborum facilis repellendus nobis.",
+            paragraph: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
             icon: 'svg-5.svg'
         },
         {
             title: "Regulatory Risk",
-            paragraph: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos veniam dolorum quam aut enim consectetur assumenda laborum facilis repellendus nobis.",
+            paragraph: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
             icon: 'svg-6.svg'
         },
     ],
     companyCert: [
         {
             title: 'Tradition',
-            paragraph: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos veniam dolorum quam aut enim consectetur assumenda laborum facilis repellendus nobis.',
+            paragraph: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
             icon: 'fa-solid fa-hourglass-end'
         },
         {
             title: 'Security',
-            paragraph: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos veniam dolorum quam aut enim consectetur assumenda laborum facilis repellendus nobis.',
+            paragraph: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
             icon: 'fa-solid fa-lock'
         },
         {
             title: 'Certificate',
-            paragraph: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos veniam dolorum quam aut enim consectetur assumenda laborum facilis repellendus nobis.',
+            paragraph: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
             icon: 'fa-solid fa-apple-whole'
         },
         {
             title: 'Expertise',
-            paragraph: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos veniam dolorum quam aut enim consectetur assumenda laborum facilis repellendus nobis.',
+            paragraph: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
             icon: 'fa-solid fa-user-tie'
         },
     ],

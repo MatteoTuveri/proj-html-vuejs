@@ -2,7 +2,7 @@
     <div class="py-5 position-relative">
         <div class="container">
             <TitleSpecial :item="item"/>
-            <div class="row row-cols-3">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
                 <div v-for="(item, index) in store.infoCards" class="col d-flex p-2">
                     <InfoCard :title="item.title" :icon="store.svgUrl + item.icon" :text="item.paragraph" />
                 </div>

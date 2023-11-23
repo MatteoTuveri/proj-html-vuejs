@@ -5,11 +5,11 @@
     <div class="display-2 mb-3" :class="(item.green) ? '' : 'white'">
         {{ item.title }} <span class="position-relative" :class="(item.green) ? 'green' : 'white'" id="special">{{ item.specialTitle }}</span>
     </div>
-    <div class="d-flex mb-3 justify-content-center" :class="(item.row)?'':'flex-column'" >
-        <div :class="(item.button)&&(item.row) ? 'col-9' : 'col-12'" id="paragraph" class="mb-4">
+    <div class="row mb-3 justify-content-center" :class="(item.row)?'':'flex-column'" >
+        <div :class="(item.button)&&(item.row) ? 'col-md-9 col-12' : 'col-12'" id="paragraph" class="mb-4">
             {{ item.paragraph }}
         </div>
-        <div v-if="item.button" class="d-flex align-items-center" :class="(item.centerButton)?'justify-content-center col-12':'col-3'">
+        <div v-if="item.button" class="d-flex align-items-center" :class="(item.centerButton)?'justify-content-center col-12':'col-12 col-md-3'">
             <div class=" text-uppercase text-center button">
                 {{ item.button }}
             </div>

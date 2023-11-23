@@ -4,8 +4,8 @@
             <div class="col-3 p-3">
                 <InfoList :img="InfoList.img" :paragraph="InfoList.paragraph" :item="InfoList.item" :button="'buy next gen'" />
             </div>
-            <div class="col-9 px-3 d-flex">
-                <div v-for="item in store.footerCards" class="p-3">
+            <div class="col-9 px-3 row row-cols-1 row-cols-lg-2 row-cols-xl-3">
+                <div v-for="item in store.footerCards" class="p-3 col">
                     <TitledArrowList :title="item.title" :item="item.items" />
                 </div>
             </div>

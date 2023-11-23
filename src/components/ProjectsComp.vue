@@ -4,13 +4,13 @@
            <TitleSpecial :item="item" /> 
         </div>
         <div>
-            <ul class="d-flex align-items-center justify-content-center mb-4">
+            <ul class="d-flex flex-wrap align-items-center justify-content-center mb-4">
                 <li v-for="(item, index) in store.navList">
                     <a href="#">{{ item }}</a>
                 </li>
             </ul>
         </div>
-        <div class="row row-cols-3">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
             <div v-for="item in store.imgCards" class="col p-2">
                 <ImgCard :title="item.title" :img="store.imgUrl + item.img" :paragraph="item.paragraph" />
             </div>

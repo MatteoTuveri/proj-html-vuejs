@@ -1,5 +1,5 @@
 <template>
-    <div class="card position-relative" style="width: 100%;">
+    <div class="card border-0 rounded-0 position-relative" style="width: 100%;">
         <div class="card-body">
             <div class="d-flex justify-content-between pb-4 icons">
                 <div class="icon">
@@ -66,6 +66,7 @@ img{
 .card{
     bottom: 0px;
     transition: 0.5s;
+    background-color: rgb(235, 236, 239);
 }
 .card:hover{
     bottom: 10px;
