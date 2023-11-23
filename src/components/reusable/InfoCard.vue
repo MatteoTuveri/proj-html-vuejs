@@ -1,5 +1,5 @@
 <template>
-    <div class="card" style="width: 100%;">
+    <div class="card position-relative" style="width: 100%;">
         <div class="card-body">
             <div class="d-flex justify-content-between pb-4 icons">
                 <div class="icon">
@@ -36,9 +36,21 @@ export default {
     filter: brightness(0) saturate(100%) invert(28%) sepia(82%) saturate(2806%) hue-rotate(163deg) brightness(88%) contrast(97%);
 }
 .arrow{
+    position: relative;
     width: 30px;
     height: 30px;
-    opacity: 0.6;
+}
+
+.arrow::after{
+    content: '';
+    position: absolute;
+    background-color: $special-bg-font;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(1);
 }
 
 .icon{
@@ -51,4 +63,23 @@ img{
     color: $options-color;
 }
 
+.card{
+    bottom: 0px;
+    transition: 0.5s;
+}
+.card:hover{
+    bottom: 10px;
+    transition: 0.5s;
+    .arrow::after{
+        transform: scale(1.2);
+        transition: 1s;
+        animation-name: example;
+        animation-duration: 1s;
+}
+
+}
+@keyframes example {
+  0%   {opacity: 0.7;}
+  100% {opacity: 0;}
+}
 </style>

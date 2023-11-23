@@ -20,9 +20,10 @@
             </div>
         </div>
         <div class="position-absolute buttons">
-            <div v-for="n in 3" :class="(activeSlide === n) ? 'active' : ''" class="slide-button" @click="activeSlide = n"></div>
+            <div v-for="n in 3" :class="(activeSlide === n) ? 'active' : ''" class="slide-button" @click="activeSlide = n">
+            </div>
         </div>
-        <div class="hero w-100" :class=" `position-${activeSlide}` ">
+        <div class="hero w-100" :class="`position-${activeSlide}`">
         </div>
     </div>
 </template>
@@ -36,24 +37,24 @@ export default {
             store,
             item: {},
             activeSlide: 2,
-            checkHome:true
+            checkHome: true
         };
     },
     computed: {
         titleSlide() {
             if (this.activeSlide === 1) {
-                this.checkHome=false;
-                this.item=store.sectionList.home.details.one
+                this.checkHome = false;
+                this.item = store.sectionList.home.details.one
                 return 'align-items-start'
             }
             else if (this.activeSlide === 2) {
-                this.checkHome=true;
-                this.item=store.sectionList.home.details.two
+                this.checkHome = true;
+                this.item = store.sectionList.home.details.two
                 return 'align-items-center text-center'
             }
             else {
-                this.checkHome=false;
-                this.item=store.sectionList.home.details.three
+                this.checkHome = false;
+                this.item = store.sectionList.home.details.three
                 return 'align-items-end text-start'
             }
         }
@@ -77,16 +78,17 @@ ul {
             color: inherit;
         }
     }
+
     li:last-child {
         background-color: $special-bg-font;
         border-radius: 5px;
         color: white;
     }
 
-    li:last-child:hover{
-    background-color: rgb(0, 166, 166);
-    transition: 1s;
-}
+    li:last-child:hover {
+        background-color: rgb(0, 166, 166);
+        transition: 1s;
+    }
 }
 
 .img {
@@ -145,5 +147,11 @@ ul {
 .position-3 {
     background-position: 120% 0%;
     transition: 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: olive;
+    }
 }
 </style>
